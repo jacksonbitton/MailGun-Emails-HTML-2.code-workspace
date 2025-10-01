@@ -17,238 +17,374 @@
   <meta name="format-detection" content="email=no">
   <meta name="x-apple-disable-message-reformatting">
   <title>Service Upcoming | WashUp Solutions</title>
-  
+
   <style type="text/css">
-    #outlook a { padding: 0; }
-    body {
-      width: 100% !important;
-      min-width: 100%;
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    .ExternalClass { width: 100%; }
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
-    .ReadMsgBody { width: 100%; }
-    
-    .apple-link a, u + #body a, a[x-apple-data-detectors] {
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-    }
-    
-    table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    td { border-collapse: collapse; mso-line-height-rule: exactly; }
-    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; }
-    p { margin: 0; }
-    
-    .preheader {
-      display: none !important;
-      visibility: hidden;
-      opacity: 0;
-      color: transparent;
-      height: 0;
-      width: 0;
-      mso-hide: all;
-      font-size: 1px;
-      line-height: 1px;
-      max-height: 0px;
-      max-width: 0px;
-      overflow: hidden;
-    }
-    
-    .email-container {
-      max-width: 640px;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .heading-primary {
-      font-size: 24px;
-      font-weight: 600;
-      color: #141414;
-      margin: 0 0 20px 0;
-      line-height: 1.2;
-    }
-    
-    .heading-secondary {
-      font-size: 20px;
-      font-weight: 600;
-      color: #141414;
-      margin: 0;
-    }
-    
-    .heading-tertiary {
-      font-size: 18px;
-      font-weight: 600;
-      color: #141414;
-      margin: 8px 0 8px 0;
-    }
-    
-    .text-body {
-      font-size: 16px;
-      color: #000000;
-      line-height: 1.6;
-      margin: 0;
-    }
-    
-    .calendar-date-box {
-      width: 64px;
-      text-align: center;
-      background: #f9fafb;
-      border-radius: 8px;
-      vertical-align: top;
-    }
-    
-    .calendar-month {
-      background: #0067B3;
-      color: #ffffff;
-      padding: 4px 0;
-      text-transform: uppercase;
-      font-size: 12px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      font-weight: 500;
-    }
-    
-    .calendar-day {
-      background: #FFFFFF;
-      font-size: 24px;
-      font-weight: 500;
-      padding: 8px 0;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      color: #000000;
-    }
-    
-    .calendar-spacer { width: 10px; }
-    
-    .data-table {
-      width: 100%;
-      font-size: 18px;
-      margin-bottom: 24px;
-      table-layout: fixed;
-    }
-    
-    .data-label {
-      width: 40%;
-      font-weight: 500;
-      color: #141414;
-      padding: 8px 0;
-      vertical-align: top;
-    }
-    
-    .data-value {
-      padding: 8px 0;
-      color: #000000;
-      vertical-align: top;
-    }
-    
-    .badge-status {
-      font-size: 16px;
-      font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 20px;
-      border: 2px solid;
-      display: inline-block;
-    }
-    
-    .badge-upcoming { background: #FBF598; color: #000000; border-color: #FFC107; }
-    .badge-completed { background: #D1FAE5; color: #065F46; border-color: #10B981; }
-    .badge-overdue { background: #FEE2E2; color: #991B1B; border-color: #EF4444; }
-    .badge-in-progress { background: #DBEAFE; color: #1E40AF; border-color: #3B82F6; }
-    
-    .btn-primary {
-      background: #0067b3 !important;
-      color: #ffffff !important;
-      padding: 12px 32px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      text-decoration: none !important;
-      display: inline-block;
-      border: none;
-      mso-padding-alt: 0;
-    }
-    
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      color: #667382;
-      padding: 30px 0;
-    }
-    
-    .social-item { padding: 0 8px; }
-    .social-icon { width: 24px; height: 24px; display: block; border: 0; }
-    
-    .footer-nav {
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-    
-    .footer-nav a {
-      color: #667382;
-      text-decoration: none;
-    }
-    
-    .footer-legal {
-      font-size: 14px;
-    }
-    
-    .footer-legal a {
-      color: #667382;
-      text-decoration: underline;
-    }
-    
-    @media only screen and (max-width: 600px) {
-      .email-container {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-      
-      .heading-primary { font-size: 22px !important; }
-      .heading-secondary { font-size: 18px !important; }
-      
-      .data-label {
-        display: block !important;
-        width: 100% !important;
-        padding-bottom: 4px !important;
-      }
-      
-      .data-value {
-        display: block !important;
-        width: 100% !important;
-        padding-top: 0 !important;
-        padding-bottom: 8px !important;
-      }
-      
-      .calendar-date-box { width: 54px !important; }
-      .calendar-month {
-        font-size: 14px !important;
-        padding: 3px 0 !important;
-      }
-      .calendar-day {
-        font-size: 24px !important;
-        padding: 6px 0 !important;
-      }
-      
-      .btn-primary {
-        display: block !important;
-        width: 90% !important;
-        max-width: 300px !important;
-        margin: 0 auto !important;
-        padding: 14px 20px !important;
-        box-sizing: border-box !important;
-      }
-    }
+        #outlook a { padding: 0; }
+        body {
+          width: 100% !important;
+          min-width: 100%;
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+          margin: 0;
+          padding: 0;
+          background-color: #ffffff;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+        .ReadMsgBody { width: 100%; }
+
+        .apple-link a, u + #body a, a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+
+        table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        td { border-collapse: collapse; mso-line-height-rule: exactly; }
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; }
+        p { margin: 0; }
+
+        .preheader {
+          display: none !important;
+          visibility: hidden;
+          opacity: 0;
+          color: transparent;
+          height: 0;
+          width: 0;
+          mso-hide: all;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          overflow: hidden;
+        }
+
+        .email-container {
+          max-width: 640px;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .heading-primary {
+          font-size: 26px;
+          font-weight: 600;
+          color: #111827;
+          margin: 0 0 20px 0;
+          line-height: 1.25;
+          text-align: center;
+        }
+
+        .heading-secondary {
+          font-size: 18px;
+          font-weight: 600;
+          color: #111827;
+          margin: 24px 0 12px 0;
+        }
+
+        .heading-tertiary {
+          font-size: 16px;
+          font-weight: 600;
+          color: #111827;
+          margin: 20px 0 8px 0;
+        }
+
+        .text-body {
+          font-size: 16px;
+          color: #1f2937;
+          line-height: 1.6;
+          margin: 0 0 16px 0;
+        }
+
+        .info-box {
+          background-color: #f8fafc;
+          padding: 16px;
+          border-radius: 8px;
+          margin: 0 0 24px 0;
+          border: 1px solid #e2e8f0;
+        }
+
+        .info-stat {
+          text-align: center;
+          padding: 0 8px;
+        }
+
+        .stat-label {
+          font-size: 13px;
+          font-weight: 600;
+          color: #4b5563;
+          margin: 6px 0 2px 0;
+        }
+
+        .stat-value {
+          font-size: 15px;
+          color: #111827;
+        }
+
+        .badge-status {
+          font-size: 15px;
+          font-weight: 600;
+          padding: 4px 12px;
+          border-radius: 999px;
+          border: 2px solid;
+          display: inline-block;
+          line-height: 1.2;
+        }
+
+        .badge-new { background: #e8f1ff; color: #0c4a8e; border-color: #0c4a8e; }
+        .badge-review { background: #fff7ed; color: #9a3412; border-color: #fb923c; }
+        .badge-progress { background: #e0f2fe; color: #075985; border-color: #0ea5e9; }
+        .badge-resolved { background: #dcfce7; color: #166534; border-color: #22c55e; }
+        .badge-denied { background: #fee2e2; color: #b91c1c; border-color: #ef4444; }
+        .badge-upcoming { background: #fef9c3; color: #92400e; border-color: #facc15; }
+        .badge-completed { background: #dcfce7; color: #166534; border-color: #22c55e; }
+        .badge-overdue { background: #fee2e2; color: #b91c1c; border-color: #ef4444; }
+
+        .data-table {
+          width: 100%;
+          font-size: 16px;
+          margin-bottom: 20px;
+          table-layout: fixed;
+        }
+
+        .data-label {
+          width: 40%;
+          font-weight: 600;
+          color: #4b5563;
+          padding: 8px 0;
+          vertical-align: top;
+        }
+
+        .data-value {
+          padding: 8px 0;
+          color: #111827;
+          vertical-align: top;
+        }
+
+        .divider {
+          border: none;
+          border-top: 1px solid #e5e7eb;
+          margin: 24px 0;
+        }
+
+        .calendar-date-box {
+          width: 64px;
+          text-align: center;
+          background: #f8fafc;
+          border-radius: 8px;
+          vertical-align: top;
+        }
+
+        .calendar-month {
+          background: #0067b3;
+          color: #ffffff;
+          padding: 4px 0;
+          text-transform: uppercase;
+          font-size: 12px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+        }
+
+        .calendar-day {
+          background: #ffffff;
+          font-size: 26px;
+          font-weight: 600;
+          padding: 10px 0;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          color: #111827;
+        }
+
+        .calendar-spacer { width: 16px; }
+
+        .task-icon-box {
+          width: 64px;
+          text-align: center;
+          background: #f8fafc;
+          border-radius: 8px;
+          vertical-align: top;
+          padding: 16px 0;
+        }
+
+        .task-icon {
+          font-size: 32px;
+          line-height: 1;
+        }
+
+        .task-spacer { width: 16px; }
+
+        .task-description {
+          background: #f8fafc;
+          padding: 16px;
+          border-radius: 8px;
+          margin: 16px 0 24px 0;
+          font-size: 16px;
+          color: #1f2937;
+          line-height: 1.6;
+        }
+
+        .profile-image {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto 16px auto;
+          box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
+        }
+
+        .profile-initials {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: #0067b3;
+          color: #ffffff;
+          font-size: 32px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 80px;
+          display: block;
+          margin: 0 auto 16px auto;
+        }
+
+        .welcome-box {
+          background-color: #f0f7ff;
+          border-left: 4px solid #0067b3;
+          padding: 16px;
+          border-radius: 6px;
+          margin: 0 0 24px 0;
+        }
+
+        .benefit-item {
+          font-size: 15px;
+          color: #1f2937;
+          padding: 6px 0;
+        }
+
+        .checkmark {
+          color: #0067b3;
+          font-weight: 700;
+          margin-right: 6px;
+        }
+
+        .cta-note {
+          font-size: 14px;
+          color: #6b7280;
+          margin: 8px 0 0 0;
+        }
+
+        .btn-primary {
+          background: #0067b3 !important;
+          color: #ffffff !important;
+          padding: 14px 32px;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          text-decoration: none !important;
+          display: inline-block;
+          border: none;
+          mso-padding-alt: 0;
+        }
+
+        .footer {
+          text-align: center;
+          font-size: 14px;
+          color: #667382;
+          padding: 30px 0;
+        }
+
+        .social-item { padding: 0 8px; }
+        .social-icon { width: 24px; height: 24px; display: block; border: 0; }
+
+        .footer-nav {
+          margin-bottom: 8px;
+          font-size: 14px;
+        }
+
+        .footer-nav a {
+          color: #667382;
+          text-decoration: none;
+        }
+
+        .footer-legal {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        .footer-legal a {
+          color: #667382;
+          text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .email-container {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
+
+          .heading-primary { font-size: 22px !important; }
+          .heading-secondary { font-size: 17px !important; }
+          .heading-tertiary { font-size: 15px !important; }
+
+          .info-stat {
+            display: block !important;
+            width: 100% !important;
+            padding: 12px 0 !important;
+            text-align: left !important;
+          }
+
+          .info-stat img {
+            display: inline-block !important;
+            vertical-align: middle !important;
+            margin: 0 8px 0 0 !important;
+          }
+
+          .stat-label {
+            display: inline-block !important;
+            vertical-align: middle !important;
+            margin: 0 !important;
+          }
+
+          .stat-value {
+            display: block !important;
+            margin-left: 32px !important;
+            margin-top: 2px !important;
+          }
+
+          .data-label {
+            display: block !important;
+            width: 100% !important;
+            padding-bottom: 4px !important;
+          }
+
+          .data-value {
+            display: block !important;
+            width: 100% !important;
+            padding-top: 0 !important;
+            padding-bottom: 8px !important;
+          }
+
+          .calendar-date-box { width: 56px !important; }
+          .calendar-month { font-size: 13px !important; padding: 4px 0 !important; }
+          .calendar-day { font-size: 22px !important; padding: 8px 0 !important; }
+
+          .task-icon-box { width: 56px !important; }
+
+          .btn-primary {
+            display: block !important;
+            width: 90% !important;
+            max-width: 320px !important;
+            margin: 0 auto !important;
+            padding: 16px 20px !important;
+            box-sizing: border-box !important;
+          }
+        }
   </style>
-  
   <!--[if gte mso 9]>
   <style type="text/css">
     body, table, td, p, h1, h2, h3, h4, span { font-family: Arial, sans-serif !important; }
@@ -256,21 +392,21 @@
   <![endif]-->
 </head>
 
-<body style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #4b5563;">
-  <span class="preheader">Service Upcoming - {{service_item_name}} at {{location_name}}</span>
-  
+<body style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #1f2937;">
+  <span class="preheader">Service {{service_item_name}} at {{location_name}} is coming up soon.</span>
+
   <!--[if mso | IE]>
   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9fafb;">
   <tr><td align="center">
   <![endif]-->
-  
+
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f9fafb;">
     <tr>
-      <td align="center" style="padding: 0px;">
+      <td align="center" style="padding: 0;">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="email-container">
           <tr>
             <td style="padding: 8px;">
-              
+
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td align="center" style="padding: 10px 0 10px 0;">
@@ -280,161 +416,163 @@
                   </td>
                 </tr>
               </table>
-              
+
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
-                  <td style="background-color: #FFFFFF; border: 1px solid #e8ebee; padding: 10px 30px 25px 30px;">
-                    
+                  <td style="background-color: #ffffff; border: 1px solid #e2e8f0; padding: 32px;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td align="center" style="padding: 10px 0; margin: 0 0 20px 0;">
-                          <table role="presentation" cellpadding="3px" cellspacing="0" border="0" style="display: inline-block;">
-                            <tr>
-                              <td class="calendar-date-box">
-                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                  <tr>
-                                    <td align="center" class="calendar-month">{{month}}</td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" class="calendar-day">{{day_of_month}}</td>
-                                  </tr>
-                                </table>
-                              </td>
-                              <td class="calendar-spacer"></td>
-                              <td style="vertical-align: middle;">
-                                <h1 class="heading-primary" style="margin: 0;">Service Upcoming</h1>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    
-                    <h4 class="heading-tertiary">Details</h4>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
-                      <tr>
-                        <td class="data-label">Status:</td>
-                        <td class="data-value">
-                          <span class="badge-status badge-upcoming">Upcoming</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Service Name:</td>
-                        <td class="data-value">{{service_item_name}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Item:</td>
-                        <td class="data-value">{{service_item}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Location:</td>
-                        <td class="data-value">{{location_name}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Wash Bay:</td>
-                        <td class="data-value">{{wash_bay}}</td>
-                      </tr>
-                    </table>
-                    
-                    <p class="text-body">This service is coming up soon. Take a minute to prepare for the upcoming service by clicking the button below.</p>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td style="text-align: center; padding: 24px 0 0 0;">
-                          <!--[if mso]>
-                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{cta_url}}" style="height:40px;v-text-anchor:middle;width:160px" arcsize="20%" strokecolor="#0067b3" fillcolor="#0067b3">
-                            <w:anchorlock/>
-                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:500;">View Service Item</center>
-                          </v:roundrect>
-                          <![endif]-->
-                          <!--[if !mso]><!-->
-                          <a href="{{cta_url}}" class="btn-primary apple-link">View Service Item</a>
-                          <!--<![endif]-->
-                        </td>
-                      </tr>
-                    </table>
-                    
+                                          <tr>
+                                            <td align="center" style="padding: 0 0 24px 0;">
+                                              <table role="presentation" cellpadding="3" cellspacing="0" border="0" style="display: inline-block;">
+                                                <tr>
+                                                  <td class="calendar-date-box">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                      <tr>
+                                                        <td align="center" class="calendar-month">{{month}}</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="center" class="calendar-day">{{day_of_month}}</td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                  <td class="calendar-spacer"></td>
+                                                  <td style="vertical-align: middle;">
+                                                    <h1 class="heading-primary" style="margin: 0;">Service Upcoming</h1>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+
+                                        <p class="text-body" style="margin-bottom: 24px;">A scheduled service is approaching. Review the details so the team is prepared.</p>
+
+                                        <h2 class="heading-secondary">Service Details</h2>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
+                                          <tr>
+                                            <td class="data-label">Status:</td>
+                                            <td class="data-value"><span class="badge-status badge-upcoming">Upcoming</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Service Name:</td>
+                                            <td class="data-value">{{service_item_name}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Item:</td>
+                                            <td class="data-value">{{service_item}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Location:</td>
+                                            <td class="data-value">{{location_name}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Wash Bay:</td>
+                                            <td class="data-value">{{wash_bay}}</td>
+                                          </tr>
+                                        </table>
+
+                                        <p class="text-body">Confirm inventory, staffing, and any customer coordination needed ahead of the appointment.</p>
+
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tr>
+                                            <td style="text-align: center; padding: 28px 0 0 0;">
+                                              <!--[if mso]>
+                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{cta_url}}" style="height:44px;v-text-anchor:middle;width:220px" arcsize="20%" strokecolor="#0067b3" fillcolor="#0067b3">
+                                                <w:anchorlock/>
+                                                <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:15px;font-weight:600;">View Service Item</center>
+                                              </v:roundrect>
+                                              <![endif]-->
+                                              <!--[if !mso]><!-->
+                                              <a href="{{cta_url}}" class="btn-primary apple-link">View Service Item</a>
+                                              <!--<![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+
+                                        <p class="cta-note">Keep your schedule up to date by managing services inside the WashUp dashboard.</p>
                   </td>
                 </tr>
               </table>
-              
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                <tr>
-                  <td class="footer">
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 16px auto;">
-                      <tr>
-                        <td class="social-item">
-                          <a href="https://www.facebook.com/profile.php?id=100094091820845" class="apple-link">
-                            <img alt="Facebook" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/479b1121-cf64-49c3-9151-d9183a69ca21.png">
-                          </a>
-                        </td>
-                        <td class="social-item">
-                          <a href="https://www.instagram.com/washup.solutions/" class="apple-link">
-                            <img alt="Instagram" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/c9a3cd15-1003-477b-9fc8-5e9c875ce9d0.png">
-                          </a>
-                        </td>
-                        <td class="social-item">
-                          <a href="https://www.linkedin.com/company/washupsolutions/" class="apple-link">
-                            <img alt="LinkedIn" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/17632543-9208-44b1-8afd-fbf50f214b7e.png">
-                          </a>
-                        </td>
-                        <td class="social-item">
-                          <a href="https://www.youtube.com/@WashUp.Solutions" class="apple-link">
-                            <img alt="YouTube" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/549d57f3-9a49-43c6-849a-71655656b3c3.png">
-                          </a>
-                        </td>
-                        <td class="social-item">
-                          <a href="https://apps.apple.com/us/app/washup-solutions/id6621199954" class="apple-link">
-                            <img alt="App Store" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/d685c86d-bb68-45fb-a580-145e01b318fc.png">
-                          </a>
-                        </td>
-                        <td class="social-item">
-                          <a href="https://play.google.com/store/apps/details?id=solutions.washup.washupapp&pcampaignid=web_share" class="apple-link">
-                            <img alt="Google Play" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/3fac632e-5704-4cbe-80bf-380990bc58ba.png">
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td class="footer-nav" style="text-align: center; margin-bottom: 8px; font-size: 12px;">
-                          <a href="https://www.washup.solutions/help-center" class="apple-link">Help Center</a> | 
-                          <a href="https://app.washup.solutions/login" class="apple-link">Login</a> | 
-                          <a href="https://www.washup.solutions/contact" class="apple-link">Contact</a> | 
-                          <a href="https://www.washup.solutions/terms-of-use" class="apple-link">Terms</a> | 
-                          <a href="https://www.washup.solutions/privacy-policy" class="apple-link">Privacy</a>
-                        </td>
-                      </tr>
-                    </table>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td class="footer-legal" style="text-align: center; font-size: 12px;">
-                          © 2025 Wash Up LLC. All rights reserved.<br>
-                          <a href="{{manage_preferences_url}}" class="apple-link">Manage Notifications</a>
-                        </td>
-                      </tr>
-                    </table>
-                    
-                  </td>
-                </tr>
-              </table>
-              
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td class="footer">
+
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 16px auto;">
+                                    <tr>
+                                      <td class="social-item">
+                                        <a href="https://www.facebook.com/profile.php?id=100094091820845" class="apple-link">
+                                          <img alt="Facebook" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/479b1121-cf64-49c3-9151-d9183a69ca21.png">
+                                        </a>
+                                      </td>
+                                      <td class="social-item">
+                                        <a href="https://www.instagram.com/washup.solutions/" class="apple-link">
+                                          <img alt="Instagram" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/c9a3cd15-1003-477b-9fc8-5e9c875ce9d0.png">
+                                        </a>
+                                      </td>
+                                      <td class="social-item">
+                                        <a href="https://www.linkedin.com/company/washupsolutions/" class="apple-link">
+                                          <img alt="LinkedIn" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/17632543-9208-44b1-8afd-fbf50f214b7e.png">
+                                        </a>
+                                      </td>
+                                      <td class="social-item">
+                                        <a href="https://www.youtube.com/@WashUp.Solutions" class="apple-link">
+                                          <img alt="YouTube" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/549d57f3-9a49-43c6-849a-71655656b3c3.png">
+                                        </a>
+                                      </td>
+                                      <td class="social-item">
+                                        <a href="https://apps.apple.com/us/app/washup-solutions/id6621199954" class="apple-link">
+                                          <img alt="App Store" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/d685c86d-bb68-45fb-a580-145e01b318fc.png">
+                                        </a>
+                                      </td>
+                                      <td class="social-item">
+                                        <a href="https://play.google.com/store/apps/details?id=solutions.washup.washupapp&pcampaignid=web_share" class="apple-link">
+                                          <img alt="Google Play" class="social-icon" src="https://content.app-us1.com/Nqrn36/2025/07/09/3fac632e-5704-4cbe-80bf-380990bc58ba.png">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                      <td class="footer-nav" style="text-align: center; margin-bottom: 8px;">
+                                        <a href="https://www.washup.solutions/help-center" class="apple-link">Help Center</a> |
+                                        <a href="https://app.washup.solutions/login" class="apple-link">Login</a> |
+                                        <a href="https://www.washup.solutions/contact" class="apple-link">Contact</a> |
+                                        <a href="https://www.washup.solutions/terms-of-use" class="apple-link">Terms</a> |
+                                        <a href="https://www.washup.solutions/privacy-policy" class="apple-link">Privacy</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                      <td class="footer-legal" style="text-align: center;">
+                                        © 2025 Wash Up LLC. All rights reserved.<br>
+                                        <a href="{{manage_preferences_url}}" class="apple-link">Manage Notifications</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </td>
+                              </tr>
+                            </table>
+
             </td>
           </tr>
         </table>
       </td>
     </tr>
   </table>
-  
+
   <!--[if mso | IE]>
     </td>
   </tr>
   </table>
   <![endif]-->
-  
+
 </body>
 </html>
+

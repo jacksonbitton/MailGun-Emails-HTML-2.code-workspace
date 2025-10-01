@@ -16,7 +16,7 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Service Completed | WashUp Solutions</title>
+  <title>New Incident Report | WashUp Solutions</title>
 
   <style type="text/css">
         #outlook a { padding: 0; }
@@ -393,7 +393,7 @@
 </head>
 
 <body style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #1f2937;">
-  <span class="preheader">Service {{service_item_name}} at {{location_name}} has been completed.</span>
+  <span class="preheader">A new incident for {{customer_name}} at {{location_name}} was just logged.</span>
 
   <!--[if mso | IE]>
   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9fafb;">
@@ -420,24 +420,30 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="background-color: #ffffff; border: 1px solid #e2e8f0; padding: 32px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <h1 class="heading-primary">New Incident Report</h1>
+
+                                        <p class="text-body" style="text-align: center; margin-bottom: 24px;">A new incident has been reported at <strong>{{location_name}}</strong>. Review the details below and coordinate with your team.</p>
+
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="info-box">
                                           <tr>
-                                            <td align="center" style="padding: 0 0 24px 0;">
-                                              <table role="presentation" cellpadding="3" cellspacing="0" border="0" style="display: inline-block;">
+                                            <td style="padding: 0;">
+                                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                                 <tr>
-                                                  <td class="calendar-date-box">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                      <tr>
-                                                        <td align="center" class="calendar-month">{{month}}</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td align="center" class="calendar-day">{{day_of_month}}</td>
-                                                      </tr>
-                                                    </table>
+                                                  <td class="info-stat" style="text-align: center; padding: 12px 8px; width: 33.33%;" valign="top">
+                                                    <img src="https://content.app-us1.com/Nqrn36/2025/07/22/52dee1e1-56d5-4509-bec7-a5f62a9e00cc.png" width="24" height="24" alt="" style="display: inline-block; margin: 0 auto;">
+                                                    <p class="stat-label">Location</p>
+                                                    <p class="stat-value">{{location_name}}</p>
                                                   </td>
-                                                  <td class="calendar-spacer"></td>
-                                                  <td style="vertical-align: middle;">
-                                                    <h1 class="heading-primary" style="margin: 0;">Service Completed</h1>
+                                                  <td class="info-stat" style="text-align: center; padding: 12px 8px; width: 33.33%;" valign="top">
+                                                    <img src="https://content.app-us1.com/Nqrn36/2025/07/22/a8c94ad6-8b76-4950-9bf5-45a592b2e461.png" width="24" height="24" alt="" style="display: inline-block; margin: 0 auto;">
+                                                    <p class="stat-label">Reported By</p>
+                                                    <p class="stat-value">{{user_name}}</p>
+                                                  </td>
+                                                  <td class="info-stat" style="text-align: center; padding: 12px 8px; width: 33.33%;" valign="top">
+                                                    <img src="https://content.app-us1.com/Nqrn36/2025/07/22/df6f7e83-9d7d-4711-b796-c718716dc0c3.png" width="24" height="24" alt="" style="display: inline-block; margin: 0 auto;">
+                                                    <p class="stat-label">Status</p>
+                                                    <p class="stat-value"><span class="badge-status badge-new">New</span></p>
                                                   </td>
                                                 </tr>
                                               </table>
@@ -445,34 +451,63 @@
                                           </tr>
                                         </table>
 
-                                        <p class="text-body" style="margin-bottom: 24px;">The scheduled service for {{service_item_name}} has been completed. Review the work summary below.</p>
 
-                                        <h2 class="heading-secondary">Service Details</h2>
+                                        <h2 class="heading-secondary">Customer Details</h2>
 
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
                                           <tr>
-                                            <td class="data-label">Status:</td>
-                                            <td class="data-value"><span class="badge-status badge-completed">Completed</span></td>
+                                            <td class="data-label">Name:</td>
+                                            <td class="data-value">{{customer_name}}</td>
                                           </tr>
                                           <tr>
-                                            <td class="data-label">Service Name:</td>
-                                            <td class="data-value">{{service_item_name}}</td>
+                                            <td class="data-label">Phone Number:</td>
+                                            <td class="data-value">{{customer_phone}}</td>
                                           </tr>
                                           <tr>
-                                            <td class="data-label">Item:</td>
-                                            <td class="data-value">{{service_item}}</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="data-label">Location:</td>
-                                            <td class="data-value">{{location_name}}</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="data-label">Wash Bay:</td>
-                                            <td class="data-value">{{wash_bay}}</td>
+                                            <td class="data-label">Email:</td>
+                                            <td class="data-value">{{customer_email}}</td>
                                           </tr>
                                         </table>
 
-                                        <p class="text-body">Inspect completion notes and sign off on the service record to keep maintenance history accurate.</p>
+                                        <hr class="divider">
+
+                                        <h2 class="heading-secondary">Vehicle Details</h2>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
+                                          <tr>
+                                            <td class="data-label">VIN:</td>
+                                            <td class="data-value">{{VIN}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Year:</td>
+                                            <td class="data-value">{{year}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Make:</td>
+                                            <td class="data-value">{{make}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Model:</td>
+                                            <td class="data-value">{{model}}</td>
+                                          </tr>
+                                        </table>
+
+                                        <hr class="divider">
+
+                                        <h2 class="heading-secondary">Incident Details</h2>
+
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
+                                          <tr>
+                                            <td class="data-label">Incident Date:</td>
+                                            <td class="data-value">{{incident_date}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="data-label">Incident Time:</td>
+                                            <td class="data-value">{{incident_time}}</td>
+                                          </tr>
+                                        </table>
+
+                                        <p class="text-body">Review the incident record to document photos, add notes, or assign follow-up actions.</p>
 
 
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -481,17 +516,17 @@
                                               <!--[if mso]>
                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{cta_url}}" style="height:44px;v-text-anchor:middle;width:220px" arcsize="20%" strokecolor="#0067b3" fillcolor="#0067b3">
                                                 <w:anchorlock/>
-                                                <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:15px;font-weight:600;">View Service Item</center>
+                                                <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:15px;font-weight:600;">View Incident Details</center>
                                               </v:roundrect>
                                               <![endif]-->
                                               <!--[if !mso]><!-->
-                                              <a href="{{cta_url}}" class="btn-primary apple-link">View Service Item</a>
+                                              <a href="{{cta_url}}" class="btn-primary apple-link">View Incident Details</a>
                                               <!--<![endif]-->
                                             </td>
                                           </tr>
                                         </table>
 
-                                        <p class="cta-note">Keep your schedule up to date by managing services inside the WashUp dashboard.</p>
+                                        <p class="cta-note">You’re receiving this email because you enabled incident notifications in WashUp.</p>
                   </td>
                 </tr>
               </table>
