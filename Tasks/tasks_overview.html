@@ -16,7 +16,7 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <meta name="x-apple-disable-message-reformatting">
-  <title>New Incident Report | WashUp Solutions</title>
+  <title>Daily Task Recap | WashUp Solutions</title>
   
   <style type="text/css">
     #outlook a { padding: 0; }
@@ -73,83 +73,53 @@
       font-size: 24px;
       font-weight: 600;
       color: #141414;
-      margin: 0 0 16px 0;
+      margin: 0 0 8px 0;
       line-height: 1.2;
       text-align: center;
     }
     
-    .heading-secondary {
-      font-size: 18px;
+    .subtitle {
+      font-size: 16px;
+      color: #667382;
+      text-align: center;
+      margin: 0 0 24px 0;
+    }
+    
+    .task-card {
+      border: 1px solid #e8ebee;
+      border-radius: 6px;
+      background-color: #ffffff;
+      margin-bottom: 0;
+      min-height: 120px;
+    }
+    
+    .task-card-wrapper {
+      padding-bottom: 16px;
+    }
+    
+    .task-card td {
+      vertical-align: top;
+    }
+    
+    .task-list-name {
+      font-size: 16px;
       font-weight: 600;
       color: #141414;
-      margin: 16px 0 8px 0;
+      margin: 0 0 4px 0;
+      text-decoration: none;
     }
     
-    .text-body {
-      font-size: 16px;
-      color: #000000;
-      line-height: 1.6;
-      margin: 0 0 16px 0;
+    .task-stats {
+      font-size: 14px;
+      color: #667382;
+      margin: 0 0 12px 0;
     }
     
-    .info-box {
-      background-color: #f8f9fa;
-      padding: 16px;
-      border-radius: 6px;
-      margin: 0 0 20px 0;
-    }
-    
-    .info-stat {
-      text-align: center;
-      padding: 0 8px;
-    }
-    
-    .stat-label {
+    .task-progress-percent {
       font-size: 13px;
-      font-weight: 600;
-      color: #374151;
-      margin: 4px 0 2px 0;
-    }
-    
-    .stat-value {
-      font-size: 15px;
-      color: #000000;
-    }
-    
-    .badge-status {
-      font-size: 16px;
+      color: #667382;
+      margin: 0 0 4px 0;
       font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 20px;
-      border: 2px solid;
-      display: inline-block;
-    }
-    
-    .data-table {
-      width: 100%;
-      font-size: 16px;
-      margin-bottom: 20px;
-      table-layout: fixed;
-    }
-    
-    .data-label {
-      width: 40%;
-      font-weight: 500;
-      color: #374151;
-      padding: 8px 0;
-      vertical-align: top;
-    }
-    
-    .data-value {
-      padding: 8px 0;
-      color: #000000;
-      vertical-align: top;
-    }
-    
-    .divider {
-      border: none;
-      border-top: 1px solid #e5e7eb;
-      margin: 20px 0;
     }
     
     .btn-primary {
@@ -194,33 +164,20 @@
       text-decoration: underline;
     }
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 480px) {
       .email-container {
         width: 100% !important;
         max-width: 100% !important;
       }
       
       .heading-primary { font-size: 22px !important; }
-      .heading-secondary { font-size: 16px !important; }
       
-      .info-stat {
-        display: block !important;
+      td[style*="width: 49%"] {
         width: 100% !important;
-        padding: 8px 0 !important;
-        text-align: left !important;
-      }
-      
-      .data-label {
         display: block !important;
-        width: 100% !important;
-        padding-bottom: 4px !important;
-      }
-      
-      .data-value {
-        display: block !important;
-        width: 100% !important;
-        padding-top: 0 !important;
-        padding-bottom: 8px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 16px !important;
       }
       
       .btn-primary {
@@ -242,7 +199,7 @@
 </head>
 
 <body style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #4b5563;">
-  <span class="preheader">Incident Report - {{customer_name}} - {{location_name}}</span>
+  <span class="preheader">Daily task recap for {{location_name}} - {{date_range}}</span>
   
   <!--[if mso | IE]>
   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9fafb;">
@@ -270,113 +227,24 @@
                 <tr>
                   <td style="background-color: #FFFFFF; border: 1px solid #e8ebee; padding: 30px;">
                     
-                    <h1 class="heading-primary">Incident Report</h1>
+                    <h1 class="heading-primary">Daily Task Recap</h1>
+                    <p class="subtitle">{{location_name}} • {{date_range}}</p>
                     
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="info-box" style="background-color: #f8f9fa; border-radius: 6px; margin: 0 0 20px 0;">
+                    {{task_lists_html}}
+                    
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td style="padding: 16px;">
-                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                        <tr>
-                            <tr>
-                                <td class="info-stat" style="text-align: left; padding: 0 8px; width: 33.33%;" valign="top">
-                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td style="padding-right: 6px;" valign="middle">
-                                        <img src="https://content.app-us1.com/Nqrn36/2025/07/22/52dee1e1-56d5-4509-bec7-a5f62a9e00cc.png" width="20" height="20" alt="" style="display: block;">
-                                      </td>
-                                      <td valign="middle">
-                                        <p class="stat-label" style="font-size: 13px; font-weight: 600; color: #374151; margin: 0; text-align: left;">Location</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <p class="stat-value" style="font-size: 15px; color: #000000; margin: 4px 0 0 0; text-align: left;">{{location_name}}</p>
-                                </td>
-                                
-                                <td class="info-stat" style="text-align: left; padding: 0 8px; width: 33.33%;" valign="top">
-                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td style="padding-right: 6px;" valign="middle">
-                                        <img src="https://content.app-us1.com/Nqrn36/2025/07/22/a8c94ad6-8b76-4950-9bf5-45a592b2e461.png" width="20" height="20" alt="" style="display: block;">
-                                      </td>
-                                      <td valign="middle">
-                                        <p class="stat-label" style="font-size: 13px; font-weight: 600; color: #374151; margin: 0; text-align: left;">Reported By</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <p class="stat-value" style="font-size: 15px; color: #000000; margin: 4px 0 0 0; text-align: left;">{{user_name}}</p>
-                                </td>
-                                
-                                <td class="info-stat" style="text-align: left; padding: 0 8px; width: 33.33%;" valign="top">
-                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                      <td style="padding-right: 6px;" valign="middle">
-                                        <img src="https://content.app-us1.com/Nqrn36/2025/07/22/df6f7e83-9d7d-4711-b796-c718716dc0c3.png" width="20" height="20" alt="" style="display: block;">
-                                      </td>
-                                      <td valign="middle">
-                                        <p class="stat-label" style="font-size: 13px; font-weight: 600; color: #374151; margin: 0; text-align: left;">Status</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <p class="stat-value" style="font-size: 15px; color: #000000; margin: 4px 0 0 0; text-align: left;">{{status}}</p>
-                                </td>
-                              </tr>
-                          </table>
+                        <td style="text-align: center; padding: 24px 0 0 0;">
+                          <!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{manage_tasks_url}}" style="height:40px;v-text-anchor:middle;width:160px" arcsize="20%" strokecolor="#0067b3" fillcolor="#0067b3">
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:500;">View All Tasks</center>
+                          </v:roundrect>
+                          <![endif]-->
+                          <!--[if !mso]><!-->
+                          <a href="{{manage_tasks_url}}" class="btn-primary apple-link">View All Tasks</a>
+                          <!--<![endif]-->
                         </td>
-                      </tr>
-                    </table>
-                    
-                    <h4 class="heading-secondary">Customer Details</h4>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
-                      <tr>
-                        <td class="data-label">Name:</td>
-                        <td class="data-value">{{test_customer_name}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Phone Number:</td>
-                        <td class="data-value">{{test_customer_phone}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Email:</td>
-                        <td class="data-value">{{test_customer_email}}</td>
-                      </tr>
-                    </table>
-                    
-                    <hr class="divider" style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;">
-                    
-                    <h4 class="heading-secondary">Vehicle Details</h4>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
-                      <tr>
-                        <td class="data-label">VIN:</td>
-                        <td class="data-value">{{test_vehicle_vin}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Year:</td>
-                        <td class="data-value">{{test_vehicle_year}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Make:</td>
-                        <td class="data-value">{{test_vehicle_make}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Model:</td>
-                        <td class="data-value">{{test_vehicle_model}}</td>
-                      </tr>
-                    </table>
-                    
-                    <hr class="divider" style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;">
-                    
-                    <h4 class="heading-secondary">Incident Details</h4>
-                    
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="data-table">
-                      <tr>
-                        <td class="data-label">Incident Date:</td>
-                        <td class="data-value">{{test_incident_date}}</td>
-                      </tr>
-                      <tr>
-                        <td class="data-label">Incident Time:</td>
-                        <td class="data-value">{{test_incident_time}}</td>
                       </tr>
                     </table>
                     
@@ -425,7 +293,10 @@
                     
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td class="footer-nav" style="text-align: center; margin-bottom: 8px;">
+                        <td class="footer-nav" style="text-align: center; margin-bottom: 8px; font-size: 12px;">
+                          <a href="https://www.washup.solutions/help-center" class="apple-link">Help Center</a> | 
+                          <a href="https://app.washup.solutions/login" class="apple-link">Login</a> | 
+                          <a href="https://www.washup.solutions/contact" class="apple-link">Contact</a> | 
                           <a href="https://www.washup.solutions/terms-of-use" class="apple-link">Terms</a> | 
                           <a href="https://www.washup.solutions/privacy-policy" class="apple-link">Privacy</a>
                         </td>
@@ -434,8 +305,9 @@
                     
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td class="footer-legal" style="text-align: center;">
-                          © 2025 Wash Up LLC. All rights reserved.
+                        <td class="footer-legal" style="text-align: center; font-size: 12px;">
+                          © 2025 Wash Up LLC. All rights reserved.<br>
+                          <a href="{{manage_preferences_url}}" class="apple-link">Manage Notifications</a>
                         </td>
                       </tr>
                     </table>
